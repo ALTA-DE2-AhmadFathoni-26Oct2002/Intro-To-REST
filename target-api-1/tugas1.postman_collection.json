@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "15c7e1a8-7cc3-46e7-be7a-4a4b361daa6c",
+		"name": "tugas1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33252243"
+	},
+	"item": [
+		{
+			"name": "get country us",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"source\": {\r\n                \"id\": 2,\r\n                \"name\": \"ammar.com\"\r\n            },\r\n            \"author\": \"ammar@bolsamania.com (María Campillo)\",\r\n            \"title\": \"dsdnjwwiwidiwdi\",\r\n            \"description\": \"djwiojwijdwjdwijwdijkdwp\",\r\n            \"url\": \"https://www.ammar.com/noticias/empresas/elon-musk-asegura-nuevo-deportivo-electrico-tesla-roadster-llegara-2025--16345234.html\",\r\n            \"urlToImage\": \"https://img2.s3wfg.com/web/img/images_uploaded/1/7/tesla_roadster.jpg\",\r\n            \"publishedAt\": \"2024-02-28T14:50:52Z\",\r\n            \"content\": \"La espera está a punto de llegar a su fin. Elon Musk ha confirmado en su perfil oficial de X (antes Twitter) que la nueva generación del Tesla Roadster, el deportivo eléctrico de la compañía, estará … [+2029 chars]\"\r\n        },",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?category=business&country=us&apiKey=320bce72dd9e4801959a01f042bab15c",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "business"
+						},
+						{
+							"key": "country",
+							"value": "us"
+						},
+						{
+							"key": "apiKey",
+							"value": "320bce72dd9e4801959a01f042bab15c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get apple",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=apple&from=2024-03-01&to=2024-03-01&sortBy=popularity&apiKey=320bce72dd9e4801959a01f042bab15c",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "apple"
+						},
+						{
+							"key": "from",
+							"value": "2024-03-01"
+						},
+						{
+							"key": "to",
+							"value": "2024-03-01"
+						},
+						{
+							"key": "sortBy",
+							"value": "popularity"
+						},
+						{
+							"key": "apiKey",
+							"value": "320bce72dd9e4801959a01f042bab15c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get source techcrunch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=320bce72dd9e4801959a01f042bab15c",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"top-headlines"
+					],
+					"query": [
+						{
+							"key": "sources",
+							"value": "techcrunch"
+						},
+						{
+							"key": "apiKey",
+							"value": "320bce72dd9e4801959a01f042bab15c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get domain wsj",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=320bce72dd9e4801959a01f042bab15c",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "domains",
+							"value": "wsj.com"
+						},
+						{
+							"key": "apiKey",
+							"value": "320bce72dd9e4801959a01f042bab15c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get tesla",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://newsapi.org/v2/everything?q=tesla&from=2024-02-02&sortBy=publishedAt&apiKey=320bce72dd9e4801959a01f042bab15c",
+					"protocol": "https",
+					"host": [
+						"newsapi",
+						"org"
+					],
+					"path": [
+						"v2",
+						"everything"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "tesla"
+						},
+						{
+							"key": "from",
+							"value": "2024-02-02"
+						},
+						{
+							"key": "sortBy",
+							"value": "publishedAt"
+						},
+						{
+							"key": "apiKey",
+							"value": "320bce72dd9e4801959a01f042bab15c"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
